@@ -1,7 +1,7 @@
 from imports import *
 
 # Testing a random env with open AI gym
-env = gym.make("ALE/SpaceInvaders-v5")
+env = gym.make("ALE/SpaceInvaders-v5", render_mode="rgb_array") # use render_mode="human" to visualize the gameplay
 height, width, channels = env.observation_space.shape
 actions = env.action_space.n
 
